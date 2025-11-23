@@ -66,8 +66,7 @@ sudo pacman -S grim slurp swappy wl-clipboard
 
 ### 6. Install System Tools
 ```bash
-sudo pacman -S fastfetch nautilus \
-  file-roller playerctl
+sudo pacman -S fastfetch nautilus file-roller playerctl
 ```
 
 ### 7. Optional (Recommended)
