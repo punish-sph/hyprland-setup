@@ -39,7 +39,7 @@ A clean, minimal, and stylish Hyprland setup with a **consistent color palette**
 
 ### 1. Install Hyprland & Core Components
 ```bash
-sudo pacman -S hyprland hyprpaper hyprlock waybar rofi wlogout hyprpaper hyprlock alacritty
+sudo pacman -S hyprland hyprpaper hyprlock waybar rofi wlogout alacritty
 ```
 
 ### 2. Install Fonts
