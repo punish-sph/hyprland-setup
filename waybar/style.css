@@ -1,0 +1,81 @@
+/* ======================================
+   Global Minimalist Reset
+====================================== */
+* {
+  color: #c7c7cc;
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono";
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Waybar wrapper */
+window#waybar {
+  background: black;
+  padding: 0;
+}
+
+/* ======================================
+   Workspaces – Minimal Elegant Glow (GTK CSS Safe)
+====================================== */
+
+#workspaces {
+  margin: 4px 0;
+}
+
+#workspaces button {
+  padding: 6px 10px;
+  margin: 0 2px;
+  background: rgba(255,255,255,0.03);
+  color: #7e7e86;
+}
+
+/* Hover with subtle glow */
+#workspaces button:hover {
+  color: #ffffff;
+  background: rgba(255,255,255,0.07);
+}
+
+/* Focused workspace */
+#workspaces button.focused {
+  color: #ffffff;
+  background: rgba(255,255,255,0.12);
+}
+
+/* Urgent workspace */
+#workspaces button.urgent {
+  color: #ff3b6b;
+}
+
+/* ======================================
+   Modules — Clean Floating Feeling
+====================================== */
+
+#network,
+#clock,
+#cpu,
+#memory,
+#battery,
+#tray,
+#pulseaudio {
+  padding: 6px 8px;
+  margin: 3px 0;
+  background: rgba(255,255,255,0.03);
+  transition: 0.2s ease;
+}
+
+#network:hover,
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#battery:hover,
+#tray:hover {
+  background: rgba(255,255,255,0.07);
+}
+
+/* Tray */
+#tray > .item {
+  margin: 0 4px;
+}

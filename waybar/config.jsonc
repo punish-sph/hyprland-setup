@@ -1,0 +1,63 @@
+{
+  "layer": "top",
+  "position": "left",
+  "margin-right": 2,
+
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-center": [],
+  "modules-right": ["network", "battery", "cpu", "memory", "clock", "tray"],
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "tooltip": true,
+    "tooltip-format": "Workspace {id}"
+  },
+
+  "hyprland/window": {
+    "format": "{title}",
+    "rotate": 270,
+    "tooltip": false
+  },
+
+  "network": {
+    "format-wifi": "",
+    "format-disconnected": "󰤭",
+    "tooltip": true,
+    "tooltip-format": "{essid}\nIP: {ipaddr}\nSignal: {signalStrength}%"
+  },
+
+  "battery": {
+    "format": "",
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "tooltip": true,
+    "tooltip-format": "{capacity}%"
+  },
+
+  "memory": {
+    "format": "󰘚",
+    "tooltip": true,
+    "tooltip-format": "{used} / {total} ({percentage}%)"
+  },
+
+  "cpu": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "{usage}%"
+  },
+
+  "clock": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "{:%A %d %B %Y | %H:%M}"
+  },
+
+  "tray": {
+    "spacing": 6,
+    "tooltip": true
+  }
+}
