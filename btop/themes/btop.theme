@@ -1,0 +1,92 @@
+# ────────────────────────────────────────────────────────────
+# Btop theme - Nordic Vibrant
+# Dark theme with harmonious vibrant colors
+# Inspired by Nord color palette
+# ────────────────────────────────────────────────────────────
+
+# Colors should be in 6 or 2 character hexadecimal or single spaced rgb decimal: "#RRGGBB", "#BW" or "0-255 0-255 0-255"
+# example for white: "#ffffff", "#ff" or "255 255 255".
+
+# All graphs and meters can be gradients
+# For single color graphs leave "mid" and "end" variable empty.
+# Use "start" and "end" variables for two color gradient
+# Use "start", "mid" and "end" for three color gradient
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]=""
+
+# Main text color
+theme[main_fg]="#e6e1dc"
+
+# Title color for boxes
+theme[title]="#c678dd"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#f1ede8"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#2d2a2e"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#ff79c6"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#4d4a4e"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#c678dd"
+
+# Cpu box outline color
+theme[cpu_box]="#98c379"
+
+# Memory/disks box outline color
+theme[mem_box]="#e5c07b"
+
+# Net up/down box outline color
+theme[net_box]="#56b6c2"
+
+# Processes box outline color
+theme[proc_box]="#ff79c6"
+
+# Box divider line and small boxes line color
+theme[div_line]="#2d2a2e"
+
+# Temperature graph colors - green (cool) to yellow to red (hot)
+theme[temp_start]="#98c379"
+theme[temp_mid]="#e5c07b"
+theme[temp_end]="#e06c75"
+
+# CPU graph colors - green to teal gradient
+theme[cpu_start]="#98c379"
+theme[cpu_mid]="#89ca78"
+theme[cpu_end]="#56b6c2"
+
+# Mem/Disk free meter - purple shades
+theme[free_start]="#c678dd"
+theme[free_mid]="#ff79c6"
+theme[free_end]="#ff79c6"
+
+# Mem/Disk cached meter - yellow to orange shades
+theme[cached_start]="#e5c07b"
+theme[cached_mid]="#d19a66"
+theme[cached_end]="#d19a66"
+
+# Mem/Disk available meter - cyan to teal shades
+theme[available_start]="#56b6c2"
+theme[available_mid]="#2ec4b6"
+theme[available_end]="#56b6c2"
+
+# Mem/Disk used meter - green to yellow to orange
+theme[used_start]="#98c379"
+theme[used_mid]="#e5c07b"
+theme[used_end]="#d19a66"
+
+# Download graph colors - cyan to teal gradient
+theme[download_start]="#56b6c2"
+theme[download_mid]="#2ec4b6"
+theme[download_end]="#2ec4b6"
+
+# Upload graph colors - purple to pink gradient
+theme[upload_start]="#c678dd"
+theme[upload_mid]="#ff79c6"
+theme[upload_end]="#ef596f"

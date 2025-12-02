@@ -8,3 +8,43 @@ style = "Regular"
 [font.bold]
 family = "JetBrainsMono Nerd Font"
 style = "Bold"
+
+[window]
+padding.x = 6
+
+[colors]
+[colors.primary]
+background = "#0a0a0a"        # dark background
+foreground = "#e6e1dc"        # warm light gray
+
+[colors.cursor]
+text = "#0a0a0a"
+cursor = "#c678dd"            # vibrant purple
+
+[colors.vi_mode_cursor]
+text = "#0a0a0a"
+cursor = "#ff79c6"            # vibrant pink
+
+[colors.selection]
+text = "#e6e1dc"
+background = "#2d2a2e"        # warm dark selection
+
+[colors.normal]
+black   = "#2d2a2e"           # dark gray
+red     = "#e06c75"           # vibrant red
+green   = "#98c379"           # vibrant green
+yellow  = "#e5c07b"           # warm yellow
+blue    = "#61afef"           # vibrant blue
+magenta = "#c678dd"           # vibrant purple
+cyan    = "#56b6c2"           # vibrant cyan
+white   = "#e6e1dc"           # warm light gray
+
+[colors.bright]
+black   = "#4d4a4e"           # bright dark gray
+red     = "#ef596f"           # bright red
+green   = "#89ca78"           # bright green
+yellow  = "#d19a66"           # bright orange
+blue    = "#61afef"           # bright blue
+magenta = "#ff79c6"           # bright pink
+cyan    = "#2ec4b6"           # bright teal
+white   = "#f1ede8"           # bright white

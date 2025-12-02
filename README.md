@@ -366,4 +366,4 @@ Contributions are welcome! Please create a PR or issue if you have any suggestio
 
 ## 📝 License
 
-MIT License - Free to use and modify
+MIT License - Free to use and modify code OSS Cotion Theme

@@ -1,319 +1,156 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
     "type": "file",
-    "source": "~/.config/fastfetch/ascii-arts.txt",
-    "color": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": ""
-    },
-    "width": null,
-    "height": null,
+    "source": "~/.config/fastfetch/ascii-art.txt",
+    "color": { "1": "magenta" },
     "padding": {
-      "top": 1,
-      "left": 3,
-      "right": 4
-    },
-    "printRemaining": true,
-    "preserveAspectRatio": false,
-    "recache": false,
-    "position": "left",
-    "chafa": {
-      "fgOnly": false,
-      "symbols": "block+border+space-wide-inverted"
+      "top": 2,
+      "right": 6,
+      "left": 2
     }
   },
-  "display": {
-    "stat": false,
-    "pipe": false,
-    "showErrors": false,
-    "disableLinewrap": true,
-    "hideCursor": false,
-    "separator": ": ",
-    "color": {
-      "keys": "",
-      "title": "",
-      "output": "",
-      "separator": ""
-    },
-    "brightColor": true,
-    "duration": {
-      "abbreviation": false,
-      "spaceBeforeUnit": "default"
-    },
-    "size": {
-      "maxPrefix": "YB",
-      "binaryPrefix": "iec",
-      "ndigits": 2,
-      "spaceBeforeUnit": "default"
-    },
-    "temp": {
-      "unit": "D",
-      "ndigits": 1,
-      "color": {
-        "green": "32",
-        "yellow": "93",
-        "red": "91"
-      },
-      "spaceBeforeUnit": "default"
-    },
-    "percent": {
-      "type": [
-        "num",
-        "num-color"
-      ],
-      "ndigits": 0,
-      "color": {
-        "green": "32",
-        "yellow": "93",
-        "red": "91"
-      },
-      "spaceBeforeUnit": "default",
-      "width": 0
-    },
-    "bar": {
-      "char": {
-        "elapsed": "■",
-        "total": "-"
-      },
-      "border": {
-        "left": "[ ",
-        "right": " ]",
-        "leftElapsed": "",
-        "rightElapsed": ""
-      },
-      "color": {
-        "elapsed": "auto",
-        "total": "97",
-        "border": "97"
-      },
-      "width": 10
-    },
-    "fraction": {
-      "ndigits": 2
-    },
-    "noBuffer": false,
-    "key": {
-      "width": 0,
-      "type": "string",
-      "paddingLeft": 0
-    },
-    "freq": {
-      "ndigits": 2,
-      "spaceBeforeUnit": "default"
-    },
-    "constants": []
-  },
-  "general": {
-    "thread": true,
-    "processingTimeout": 5000,
-    "detectVersion": true,
-    "playerName": "",
-    "dsForceDrm": false
-  },
   "modules": [
+    "break",
     {
-      "type": "title",
-      "key": " ",
-      "keyIcon": "",
-      "fqdn": false,
-      "color": {
-        "user": "",
-        "at": "",
-        "host": ""
-      }
-    },
-    {
-      "type": "separator",
-      "string": "-",
-      "outputColor": "",
-      "times": 0
-    },
-    {
-      "type": "os",
-      "keyIcon": ""
+      "type": "custom",
+      "format": "\u001b[90m┌──────────────────────Hardware──────────────────────┐"
     },
     {
       "type": "host",
-      "keyIcon": "󰌢"
-    },
-    {
-      "type": "kernel",
-      "keyIcon": ""
-    },
-    {
-      "type": "uptime",
-      "keyIcon": ""
-    },
-    {
-      "type": "packages",
-      "keyIcon": "󰏖",
-      "disabled": [
-        "apk"
-      ],
-      "combined": false
-    },
-    {
-      "type": "shell",
-      "keyIcon": ""
-    },
-    {
-      "type": "display",
-      "keyIcon": "󰍹",
-      "compactType": "none",
-      "preciseRefreshRate": false,
-      "order": null
-    },
-    {
-      "type": "de",
-      "keyIcon": "",
-      "slowVersionDetection": false
-    },
-    {
-      "type": "wm",
-      "keyIcon": "",
-      "detectPlugin": false
-    },
-    {
-      "type": "wmtheme",
-      "keyIcon": "󰓸"
-    },
-    {
-      "type": "theme",
-      "keyIcon": "󰉼"
-    },
-    {
-      "type": "icons",
-      "keyIcon": ""
-    },
-    {
-      "type": "font",
-      "keyIcon": ""
-    },
-    {
-      "type": "cursor",
-      "keyIcon": "󰆿"
-    },
-    {
-      "type": "terminal",
-      "keyIcon": ""
-    },
-    {
-      "type": "terminalfont",
-      "keyIcon": ""
+      "key": " PC",
+      "keyColor": "green"
     },
     {
       "type": "cpu",
-      "keyIcon": "",
-      "temp": false,
-      "showPeCoreCount": false
+      "key": "│ ├",
+      "showPeCoreCount": true,
+      "keyColor": "green"
     },
     {
       "type": "gpu",
-      "keyIcon": "󰾲",
-      "driverSpecific": false,
+      "key": "│ ├",
       "detectionMethod": "pci",
-      "temp": false,
-      "hideType": "none",
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-      }
+      "keyColor": "green"
     },
     {
-      "type": "memory",
-      "keyIcon": "",
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-      }
-    },
-    {
-      "type": "swap",
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-      },
-      "keyIcon": "󰓡",
-      "separate": false
+      "type": "display",
+      "key": "│ ├󱄄",
+      "keyColor": "green"
     },
     {
       "type": "disk",
-      "keyIcon": "",
-      "showRegular": true,
-      "showExternal": true,
-      "showHidden": false,
-      "showSubvolumes": false,
-      "showReadOnly": true,
-      "showUnknown": false,
-      "folders": "",
-      "hideFolders": "/efi:/boot:/boot/*",
-      "hideFS": "",
-      "useAvailable": false,
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-      }
+      "key": "│ ├󰋊",
+      "keyColor": "green"
     },
     {
-      "type": "localip",
-      "keyIcon": "󰩟",
-      "showIpv4": true,
-      "showIpv6": false,
-      "showMac": false,
-      "showLoop": false,
-      "showPrefixLen": true,
-      "showMtu": false,
-      "showSpeed": false,
-      "showFlags": false,
-      "compact": false,
-      "defaultRouteOnly": true,
-      "showAllIps": false,
-      "namePrefix": ""
+      "type": "memory",
+      "key": "│ ├",
+      "keyColor": "green"
     },
     {
-      "type": "battery",
-      "keyIcon": "",
-      "temp": false,
-      "percent": {
-        "green": 50,
-        "yellow": 20,
-        "type": 0
-      }
+      "type": "swap",
+      "key": "└ └󰓡 ",
+      "keyColor": "green"
     },
     {
-      "type": "poweradapter",
-      "keyIcon": "󰚥"
-    },
-    {
-      "type": "locale",
-      "keyIcon": ""
+      "type": "custom",
+      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
     },
     "break",
     {
-      "type": "colors",
-      "key": " ",
-      "keyIcon": "",
-      "symbol": "block",
-      "paddingLeft": 0,
-      "block": {
-        "width": 3,
-        "range": [
-          0,
-          15
-        ]
-      }
-    }
+      "type": "custom",
+      "format": "\u001b[90m┌──────────────────────Software──────────────────────┐"
+    },
+    {
+      "type": "command",
+      "key": "\ue900 OS",
+      "keyColor": "blue",
+      "text": "version=$(omarchy-version); echo \"Omarchy $version\""
+    },
+    {
+      "type": "command",
+      "key": "│ ├󰘬",
+      "keyColor": "blue",
+      "text": "branch=$(omarchy-version-branch); echo \"$branch\""
+    },
+    {
+      "type": "command",
+      "key": "│ ├󰔫",
+      "keyColor": "blue",
+      "text": "channel=$(omarchy-version-channel); echo \"$channel\""
+    },
+    {
+      "type": "kernel",
+      "key": "│ ├",
+      "keyColor": "blue"
+    },
+    {
+      "type": "wm",
+      "key": "│ ├",
+      "keyColor": "blue"
+    },
+    {
+      "type": "de",
+      "key": " DE",
+      "keyColor": "blue"
+    },
+    {
+      "type": "terminal",
+      "key": "│ ├",
+      "keyColor": "blue"
+    },
+    {
+      "type": "packages",
+      "key": "│ ├󰏖",
+      "keyColor": "blue"
+    },
+    {
+      "type": "wmtheme",
+      "key": "│ ├󰉼",
+      "keyColor": "blue"
+    },
+    {
+      "type": "command",
+      "key": "│ ├󰸌",
+      "keyColor": "blue",
+      "text": "theme=$(omarchy-theme-current); echo -e \"$theme \\e[38m●\\e[37m●\\e[36m●\\e[35m●\\e[34m●\\e[33m●\\e[32m●\\e[31m●\""
+    },
+    {
+      "type": "terminalfont",
+      "key": "└ └",
+      "keyColor": "blue"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌────────────────Age / Uptime / Update───────────────┐"
+    },
+    {
+      "type": "command",
+      "key": "󱦟 OS Age",
+      "keyColor": "magenta",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+    },
+    {
+      "type": "uptime",
+      "key": "󱫐 Uptime",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "command",
+      "key": " Update",
+      "keyColor": "magenta",
+      "text": "updated=$(omarchy-version-pkgs); echo \"$updated\""
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+    },
+    "break"
   ]
 }

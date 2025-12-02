@@ -3,8 +3,8 @@
   "position": "left",
   "margin-right": 2,
 
-  "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-center": [],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": [ "hyprland/window"],
   "modules-right": ["network", "battery", "cpu", "memory", "clock", "tray"],
 
   "hyprland/workspaces": {
@@ -29,13 +29,26 @@
   },
 
   "battery": {
-    "format": "",
-    "states": {
-      "warning": 20,
-      "critical": 10
-    },
-    "tooltip": true,
-    "tooltip-format": "{capacity}%"
+    "rotate": 270,
+		"states": {
+			"warning": 20,
+			"critical": 10
+		},
+		"format": "{icon}",
+		"format-time": "{H} hr {M} min",
+		"format-icons": [
+			"󰂎", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
+		],
+		"format-charging": "󰉁",
+		"min-length": 7,
+		"max-length": 7,
+		"tooltip-format": "<b>Discharging</b>: {time} {capacity}%",
+		"tooltip-format-charging": "<b>Charging</b>: {time} {capacity}%",
+		"events": {
+			"on-discharging-warning": "notify-send 'Battery Low (20%)' -u critical -i 'battery-020'",
+			"on-discharging-critical": "notify-send 'Battery Critical (10%)' -u critical -i 'battery-010'",
+			"on-charging-100": "notify-send 'Battery Full (100%)' -i 'battery-100-charged'"
+		}
   },
 
   "memory": {
